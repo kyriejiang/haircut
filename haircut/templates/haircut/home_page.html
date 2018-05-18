@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Amazing Kyrie's Barbershop</title>
+</head>
+<body>
+    <h1>Amazing Kyrie's Barbershop</h1>
+    <p>your convenience is our duty</p>
+
+    <p>several things you can choose</p>
+    <h2>Mohican:60 RMB</h2>
+   <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526626796180&di=da19df7df9625efb48e808c4268b5e3d&imgtype=0&src=http%3A%2F%2Fp2.pstatp.com%2Flarge%2F1b7f0002d567f7e906db">
+
+   <h2>Halve: 40 RMB</h2>
+   <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526626652476&di=df8378cea3ece92b02f5e8bb20c18c0a&imgtype=0&src=http%3A%2F%2Fimage.uczzd.cn%2F17667797011611798620.jpeg%3Fid%3D0%26from%3Dexport">
+
+   <h2>Bold :20 RMB</h2>
+   <img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2480208070,848304443&fm=200&gp=0.jpg">
+    <h1>Place Your Order</h1>
+    <form action="{% url 'haircut:home_page' %} " method="POST">
+        {% csrf_token %}
+        <input type="text" name="time" placeholder="Type Your time"><br>
+        <textarea placeholder="Text your customer name" name="customer name"></textarea><br>
+        <input type="submit" value="Buy Now!">
+   
+
+</body>
+</html>
